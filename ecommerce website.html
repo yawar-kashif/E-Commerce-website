@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-commerce Website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/brands.min.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> -->
+
+
+  <style>
+    body {
+      margin: auto;
+    }
+    .container1 {
+      width: 100%;
+      height: 500px;
+      background-color: #FBEBB5;
+      opacity: 1;
+
+
+
+
+    }
+
+    .nav>ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      position: relative;
+      top: 30px;
+      right: 10px;
+
+
+
+    }
+
+    .nav>ul>li {
+      margin-right: 40px;
+      font-size: 20px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: 500;
+      cursor: pointer;
+
+
+    }
+
+    .pic8 {
+      width: 550px;
+      height: 450px;
+      float: right;
+      position: absolute;
+      top: 100px;
+      left: 700px;
+      transform: scaleX(-1);
+      
+      
+
+
+    }
+    
+
+    section>h2 {
+      display: inline-block;
+      position: relative;
+      top: 140px;
+      left: 300px;
+      font-size: 3.5rem;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: 500;
+      
+
+
+    }
+
+    #shopbtn {
+      font-size: 26px;
+      color: black;
+      font-weight: 600;
+      display: inline-block;
+      background-color: #FBEBB5;
+      cursor: pointer;
+      border: 0;
+      border-bottom: 3px solid black;
+      margin-left: -50px;
+      /* margin-top: 120px; */
+      padding: 10px 26px;
+      transition: all 0.3s ease;
+      position: relative;
+      top: 220px;
+      z-index: 10;
+    }
+
+    #shopbtn:hover {
+      background-color: #0e0d0d;
+      color: white;
+      transform: scale(1.05);
+    }
+
+    #shopbtn:active {
+      transform: scale(0.95);
+    }
+
+   
+
+    .container2 {
+      height: 550px;
+      width: 100%;
+      background-color: #FAF4F4;
+      
+
+    }
+
+    .pic5 {
+      display: inline;
+      height: 800px;
+      width: 800px;
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: row;
+      position: absolute;
+      top: 220px;
+      
+
+
+
+    }
+
+    .pic7 {
+      display: inline;
+      height: 800px;
+      width: 800px;
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: row;
+      position: absolute;
+      top: 200px;
+      left: 530px;
+      
+      
+
+
+
+    }
+
+    .container2>h2 {
+      font-size: 3.5rem;
+      position: absolute;
+      top: 850px;
+      left: 250px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-weight: 400;
+      
+    }
+
+    .container2>p {
+      position: absolute;
+      top: 950px;
+      left: 330px;
+      font-size: 26px;
+      color: black;
+      font-weight: 500;
+      padding-bottom: 6px;
+      border-bottom: 2px solid black;
+      cursor: pointer;
+       transition: all 0.5s ease;
+       
+    }
+     .container2>p:hover{
+      transition: all 0.5s ease;
+      color: rgb(126, 125, 124);
+      border-bottom-color: rgb(126, 125, 124);
+
+
+    }
+
+    .sofa>h2 {
+      font-size: 3.5rem;
+      position: absolute;
+      top: 850px;
+      left: 900px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-weight: 400;
+      
+    }
+
+    .sofa>p {
+      position: absolute;
+      top: 950px;
+      left: 905px;
+      font-size: 26px;
+      color: black;
+      font-weight: 500;
+      padding-bottom: 6px;
+      border-bottom: 2px solid black;
+      cursor: pointer;
+      transition: all 0.5s ease;
+      
+    }
+    .sofa>p:hover{
+      transition: all 0.5s ease;
+      color: rgb(126, 125, 124);
+      border-bottom-color: rgb(126, 125, 124);
+
+
+    }
+
+    .container3>h1{
+      font-size: 3rem;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin-left: 450px;
+
+    }
+    .container3>p{
+      font-size: 24px;
+      margin-left: 200px;
+      color: grey;
+    }
+
+    .box1>img{
+      height: 200px;
+      width: 300px;
+      margin-left: 50px;
+      margin-top: 50px;
+      
+    }
+    .box2>img{
+      height: 300px;
+      width: 400px;
+      position: absolute;
+      left: 1px;
+      top: 20px;
+      z-index: 1;
+      
+    }
+    .box3>img{
+      height: 300px;
+      width: 400px;
+      position: absolute;
+      left: -10px;
+      top: -40px;
+      
+      
+      
+      
+    }
+    .box4>img{
+      height: 300px;
+      width: 400px;
+      position: absolute;
+      top: 10px;
+      left: -5px;
+      
+    }
+    .box5>img{
+      height: 200px;
+      width: 240px;
+      position: absolute;
+      top: 30px;
+      left: 90px;
+      transform: scale(1.8);
+      overflow: hidden;
+      
+       
+      
+    }
+
+    .box1{
+      background-color: rgb(255, 253, 253);
+      height: 400px;
+      width:  400px;
+      position: absolute;
+      left: 15px;
+      border-radius: 10px;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      border: #0e0d0d solid 1px;
+      transition: 1s ease-in-out  ;
+    }
+    .box1:hover{
+      transition: 1s ease-in-out  ;
+      background-color: rgb(240, 235, 235);
+      transform: scale(1.1);
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    }
+    .box2:hover{
+      transition: 1s ease-in-out  ;
+      background-color: rgb(240, 235, 235);
+      transform: scale(1.1);
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    }
+    .box3:hover{
+      transition: 1s ease-in-out  ;
+      background-color: rgb(240, 235, 235);
+      transform: scale(1.1);
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    }
+    .box4:hover{
+      transition: 1s ease-in-out  ;
+      background-color: rgb(240, 235, 235);
+      transform: scale(1.1);
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    }
+    .box5:hover{
+      transition: 1s ease-in-out  ;
+      background-color: rgb(240, 235, 235);
+      transform: scale(1.1);
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    }
+    .box2{
+       transition: 1s ease-in-out  ;
+      background-color: rgb(255, 253, 253);
+      height: 400px;
+      width:  400px;
+      border-radius: 10px;
+       position: absolute;
+      left: 470px;
+      top: 1305px;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      border: #0e0d0d solid 1px;
+    }
+    .box3{
+       background-color: rgb(255, 253, 253);
+      height: 400px;
+      width:  400px;
+      border-radius: 10px;
+       position: absolute;
+      left: 930px;
+      top: 1305px;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+       transition: 1s ease-in-out  ;
+       border: #0e0d0d solid 1px;
+       
+      
+    }
+    .box4{
+      background-color: rgb(255, 253, 253);
+       transition: 1s ease-in-out  ;
+      height: 400px;
+      width:  400px;
+      border-radius: 10px;
+       position: absolute;
+      left: 200px;
+      top: 1800px;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      border: #0e0d0d solid 1px;
+    }
+    .box5{
+      background-color: rgb(255, 253, 253);
+       transition: 1s ease-in-out  ;
+      height: 400px;
+      width:  400px;
+      border-radius: 10px;
+       position: absolute;
+      left: 800px;
+      top: 1800px;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      border: #0e0d0d solid 1px;
+     
+    }
+
+    .box1>h1{
+      margin-top: 45px;
+      margin-left: 100px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .box1>h2{
+      margin-left: 170px;
+      font-family: Arial, Helvetica, sans-serif;
+      text-decoration: underline;
+    }
+
+    .box2>h1{
+      margin-top: 300px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin-left: 50px;
+    }
+    .box2>h2{
+      margin-left: 170px;
+      font-family: Arial, Helvetica, sans-serif;
+      text-decoration: underline;
+    }
+    .box3>h1{
+      margin-top: 300px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin-left: 110px;
+    }
+    .box3>h2{
+      margin-left: 170px;
+      font-family: Arial, Helvetica, sans-serif;
+      text-decoration: underline;
+    }
+    .box4>h1{
+      margin-top: 300px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin-left: 110px;
+    }
+    .box4>h2{
+      margin-left: 170px;
+      font-family: Arial, Helvetica, sans-serif;
+      text-decoration: underline;
+    }
+    .box5>h1{
+      margin-top: 300px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin-left: 80px;
+      
+    }
+     .box5>h2{
+      margin-left: 170px;
+      font-family: Arial, Helvetica, sans-serif;
+      text-decoration: underline;
+      
+    }
+    footer{
+      background-color: #FBEBB5;
+      width: 1300px;
+      margin-left: 20px;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      position: absolute;
+      align-items: center;
+      top: 2500px;
+      border: 3px solid rgb(12, 12, 12);
+
+    }
+    footer>h2{
+      font-size: 2rem;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      
+      
+    }
+    footer>p{
+      font-size: 20px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      text-decoration: underline;
+      
+      
+    }
+    .nav>ul>li>a{
+      text-decoration: none;
+      color: black;
+      transition:  0.3s ease-out;
+
+    }
+    .nav>ul>li>a:hover{
+      transition:  0.3s ease-out;
+      color: rgb(235, 201, 109);
+      
+    }
+    html{
+      scroll-behavior: smooth;
+    }
+    
+  </style>
+
+
+
+</head>
+
+<body>
+
+  <div class="container1">
+    <div class="nav">
+
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+
+     <!-- <i class="fa-light fa-heart fa-2xl" style="color: rgb(0, 3, 6);"></i>  -->
+    <section id="home">
+      <h2>Rocket Single <br>Seater</h2>
+     <button type="button" id="shopbtn">shop now</button> 
+      <img class="pic8" src="assets/pic8.png" alt="">
+    </section>
+  </div>
+
+  <div class="container2" id="about">
+
+
+    <img src="assets/pic5.png" alt="" class="pic5">
+    <h2>Side Table</h2>
+    <p>view more</p>
+    <div class="sofa">
+
+      <img src="assets/pic7.png" alt="" class="pic7">
+      <h2>Sofa</h2>
+      <p>view more</p>
+
+    </div>
+
+  </div>
+
+  <div class="container3" id="shop">
+    <h1>TOP PICKS FOR YOU</h1>
+    <p>Find a bright ideal to suit your taste with our great 
+      selection of suspension, floor and table lights.</p>
+      <br><br><br>
+
+
+      <div class="box1">
+
+        <img src="assets/pic1.png" alt="" >
+        <h1>Wood Bench</h1>
+        <h2>300$</h2>
+        
+      </div>
+
+      <div class="box2">
+
+        <img src="assets/pic2.png" alt="">
+        <h1>Comfort Wood Sofa</h1>
+        <h2>1000$</h2>
+      </div>
+
+      <div class="box3">
+
+        <img src="assets/pic3.png" alt="">
+        <h1>Stylish Table</h1>
+        <h2>650$</h2>
+      </div>
+
+      <div class="box4">
+
+        <img src="assets/pic4.png" alt="">
+        <h1>Dining Table</h1>
+        <h2>1450$</h2>
+      </div>
+
+      <div class="box5">
+
+        <img src="assets/pic6.png" alt="">
+        <h1>Comfortable Sofa</h1>
+        <h2>550$</h2>
+      </div>
+
+  </div>
+
+  
+  
+  <footer id="contact"> 
+    
+    <h2>@Copyright reserved Yawar Bin Kashif</h2>
+    <p>Contact: +92 3222186588 <br>
+      Email: yawark2008@gmail.com <br>
+      Linkedin: Yawar Bin Kashif</p>
+      
+      
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+      let viewMore2 = document.querySelector('.sofa > p');
+      viewMore2.addEventListener('click', function(){
+        Swal.fire({
+          title: 'Sorry!',
+          text: 'Item coming soon!',
+          icon: 'error',
+          confirmButtonColor: '#d33',
+          confirmButtonText: 'OK'
+        })
+      })
+      let viewMore = document.querySelector('.container2>p');
+      viewMore.addEventListener('click', function(){
+        Swal.fire({
+          title: 'Sorry!',
+          text: 'Item coming soon!',
+          icon: 'error',
+          confirmButtonColor: '#d33',
+          confirmButtonText: 'OK'
+        })
+      })
+      let shopBtn = document.getElementById('shopbtn');
+      shopBtn.addEventListener('click', function(){
+        Swal.fire({
+          title: 'Sorry!',
+          text: 'Item sold out!',
+          icon: 'error',
+          confirmButtonColor: '#d33',
+          confirmButtonText: 'OK'
+        })
+      })
+  
+    </script>
+                            
+                            
+</body>
+</html>
